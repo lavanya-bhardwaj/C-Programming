@@ -5,7 +5,10 @@ for C Programming and Data Structures.
 
 ## Current Status
 📌 Unit 1 – Introduction  
-➡️ Pointers (In Progress)
+✅ Pointers
+✅ Dynamic Memory Allocation
+➡️ Recursion (In Progress)
+
 
 ## Syllabus Coverage
 - Unit 1: Pointers, Dynamic Memory Allocation, Recursion, Strings
