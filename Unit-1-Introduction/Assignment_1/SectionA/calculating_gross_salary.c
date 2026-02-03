@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* User-defined function to calculate gross salary */
 float calculateGross(float basic)
 {
     float da, hra, gross;
