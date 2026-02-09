@@ -1,9 +1,11 @@
 #include <stdio.h>
 void checkEvenOdd(int num) {
-    if (num % 2 == 0)
+    if (num % 2 == 0){
         printf("%d is an Even number\n", num);
-    else
+    }
+    else{
         printf("%d is an Odd number\n", num);
+    }
 }
 
 int main() {
