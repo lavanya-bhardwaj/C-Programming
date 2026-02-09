@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void pattern3(int n) {
+void pattern(int n) {
     int i, j;
     for (i = n; i >= 1; i--) {
         for (j = 1; j <= i; j++){
@@ -14,6 +14,6 @@ int main() {
     int n;
     printf("Enter number of lines: ");
     scanf("%d", &n);
-    pattern3(n);
+    pattern(n);
     return 0;
 }
