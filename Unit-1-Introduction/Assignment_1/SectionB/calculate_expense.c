@@ -2,7 +2,7 @@
 void calculateExpense(int qty, float price) {
     float total, discount, finalAmount;
     total = qty * price;
-    discount = total * 0.10;          // 10% discount
+    discount = total * 0.10; 
     finalAmount = total - discount;
     if (qty > 100 || finalAmount > 5000) {
         finalAmount = finalAmount - (finalAmount * 0.10);
