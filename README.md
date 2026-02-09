@@ -1,4 +1,4 @@
-# DSA in C
+# C-Programming
 
 This repository contains C programs based on the course syllabus
 for C Programming and Data Structures.
