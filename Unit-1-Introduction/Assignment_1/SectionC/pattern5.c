@@ -17,6 +17,6 @@ int main() {
     int n;
     printf("Enter number of lines: ");
     scanf("%d", &n);
-    pattern1(n);
+    pattern(n);
     return 0;
 }
