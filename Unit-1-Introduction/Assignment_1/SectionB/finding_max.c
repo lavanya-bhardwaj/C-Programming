@@ -1,9 +1,11 @@
 #include <stdio.h>
 void findMax(int a, int b) {
-    if (a > b)
+    if (a > b){
         printf("Maximum number is %d\n", a);
-    else
+    }
+    else{
         printf("Maximum number is %d\n", b);
+    }
 }
 int main() {
     int a, b;
