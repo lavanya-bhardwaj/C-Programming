@@ -1,21 +1,25 @@
 #include <stdio.h>
 void calculateGrade(int marks) {
-    if (marks >= 90)
+    if (marks >= 90){
         printf("Grade: A\n");
-    else if (marks >= 75)
+    }
+    else if (marks >= 75){
         printf("Grade: B\n");
-    else if (marks >= 60)
+    }
+    else if (marks >= 60){
         printf("Grade: C\n");
-    else if (marks >= 50)
+    }
+    else if (marks >= 50){
         printf("Grade: D\n");
-    else
+    }
+    else{
         printf("Grade: F\n");
+    }
 }
 int main() {
     int marks;
     printf("Enter marks: ");
     scanf("%d", &marks);
     calculateGrade(marks);
-
     return 0;
 }
