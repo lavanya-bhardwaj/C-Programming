@@ -14,7 +14,7 @@ void calculateIlliterates(int population)
 
     illiterateMen = men - literateMen;
     illiterateWomen = women - literateWomen;
-
+    /*lavanya2025280007*/
     printf("Illiterate Men = %d\n", illiterateMen);
     printf("Illiterate Women = %d\n", illiterateWomen);
 }
