@@ -11,6 +11,6 @@ int main() {
     int year;
     printf("Enter year: ");
     scanf("%d", &year);
-    checkLeapYear(year);
+    checkLeapYear/*lavanya2025280007*/ (year);
     return 0;
 }
