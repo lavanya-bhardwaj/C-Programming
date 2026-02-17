@@ -23,7 +23,7 @@ void calculateTax(char name, char status, float grossIncome, int children) {
     else if (taxableIncome <= 40000) {
         tax = (10000 * 0.20) + (taxableIncome - 20000) * 0.30;
     }
-    else {
+    else {/*lavanya2025280007*/ 
         tax = (10000 * 0.20) + (20000 * 0.30) + (taxableIncome - 40000) * 0.40;
     }
     printf("\nName (Initial): %c\n", name);
