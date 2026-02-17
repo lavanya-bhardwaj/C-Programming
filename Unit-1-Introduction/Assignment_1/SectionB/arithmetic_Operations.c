@@ -9,7 +9,7 @@ void arithmeticOperation(int a, int b) {
     else if (b > a) {
         printf("Addition = %d\n", a + b);
     }
-    else {
+    else {/*lavanya2025280007*/ 
         printf("Subtraction = %d\n", a - b);
     }
 }
