@@ -12,6 +12,7 @@ int main()
     float sellingPrice, profit, costPrice;
     printf("Enter total selling price of 15 items: ");
     scanf("%f", &sellingPrice);
+    /*lavanya2025280007*/
     printf("Enter total profit earned: ");
     scanf("%f", &profit);
     costPrice = calculateCostPrice(sellingPrice, profit);
