@@ -10,8 +10,8 @@ void youngest(int r, int s, int a) {
         printf("Youngest: A, Age = %d\n", a);
     }
 }
-int main() {
-    int lavanya, mukund, ajay;
+int main() {/*lavanya2025280007*/ 
+    int lavanya, mukund, shreya;
     printf("Enter age of Lavanya, Mukund and Shreya: ");
     scanf("%d %d %d", &lavanya, &mukund, &shreya);
     youngest(lavanya, mukund, shreya);
