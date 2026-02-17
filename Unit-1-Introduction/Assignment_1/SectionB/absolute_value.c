@@ -1,8 +1,8 @@
 #include <stdio.h>
-void absoluteValue(int num) {
+void absoluteValue(int num){
     if (num < 0)
         printf("Absolute value = %d\n", -num);
-    else
+    else/*lavanya2025280007*/ 
         printf("Absolute value = %d\n", num);
 }
 
