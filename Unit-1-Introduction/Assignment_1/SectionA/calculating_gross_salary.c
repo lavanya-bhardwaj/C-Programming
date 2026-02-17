@@ -17,7 +17,7 @@ int main()
 
     printf("Enter basic salary: ");
     scanf("%f", &basic);
-
+    /*lavanya2025280007*/
     gross = calculateGross(basic);
 
     printf("Gross Salary = %.2f", gross);
