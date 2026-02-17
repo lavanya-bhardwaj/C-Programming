@@ -13,9 +13,11 @@ void denomination(int amount) {
 }
 
 int main() {
+    
     int amount;
     printf("Enter the amount to withdraw: ");
     scanf("%d", &amount);
+    /*lavanya2025280007*/
     denomination(amount);
     return 0;d
 }
