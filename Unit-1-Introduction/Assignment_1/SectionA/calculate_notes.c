@@ -11,9 +11,12 @@ void calculateNotes(int amount)
     printf("50 Rupee Notes  = %d\n", n50);
     printf("10 Rupee Notes  = %d\n", n10);
 }
+
 int main()
 {
+  
     int amount;
+    /*lavanya*/
     printf("Enter the amount to withdraw: ");
     scanf("%d", &amount);
     calculateNotes(amount);
