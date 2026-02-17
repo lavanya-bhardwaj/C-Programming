@@ -15,6 +15,7 @@ int main()
     int num, result;
     printf("Enter a five-digit number: ");
     scanf("%d", &num);
+    /*lavanya2025280007*/
     result = sumOfDigits(num);
     printf("Sum of digits = %d", result);
     return 0;
