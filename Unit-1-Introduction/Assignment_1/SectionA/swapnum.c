@@ -19,8 +19,7 @@ int main()
     printf("Enter value of D: ");
     scanf("%d", &D);
 
-    swap(&C, &D);
-
+    swap(&C, &D);/*lavanya2025280007*/
     printf("After swapping:\n");
     printf("C = %d\n", C);
     printf("D = %d\n", D);
