@@ -6,6 +6,7 @@ void costPrice() {
     printf("Enter total profit earned: ");
     scanf("%f", &totalProfit);
     costPerItem = (totalSellingPrice - totalProfit) / 15;
+    /*lavanya2025280007*/
     printf("Cost price of one item = %.2f\n", costPerItem);
 }
 
