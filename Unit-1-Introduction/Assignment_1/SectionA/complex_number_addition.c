@@ -1,5 +1,5 @@
 #include <stdio.h>
-void addComplex() {
+void addcomplex() {
     float r1, i1, r2, i2;
     float rSum, iSum;
     printf("Enter real and imaginary part of first complex number: ");
@@ -13,6 +13,6 @@ void addComplex() {
 }
 
 int main() {
-    addComplex();
+    addcomplex();
     return 0;
 }
