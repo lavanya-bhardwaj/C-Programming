@@ -1,0 +1,180 @@
+#include <stdio.h>
+#define MAX 100
+
+int arr[MAX], n=0;
+
+void input(int arr[], int *n) {
+    printf("Enter number of elements: ");
+    scanf("%d", n);
+
+    if (*n > MAX) {
+        printf("Limit exceeded\n");
+        *n = 0;
+        return;
+    }
+
+    printf("Enter %d elements:\n", *n);
+    for (int i = 0; i < *n; i++) {
+        scanf("%d", &arr[i]);
+    }
+}
+
+void display(int arr[], int n) {
+    if (n == 0) {
+        printf("Array is empty\n");
+        return;
+    }
+
+    printf("Array elements are: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+void insert(int arr[], int *n) {
+    int pos, value;
+
+    printf("Enter position (0 to %d): ", *n);
+    scanf("%d", &pos);
+
+    if (pos < 0 || pos > *n) {
+        printf("Invalid position\n");
+        return;
+    }
+
+    printf("Enter value: ");
+    scanf("%d", &value);
+
+    for (int i = *n; i > pos; i--) {
+        arr[i] = arr[i - 1];
+    }
+
+    arr[pos] = value;
+    (*n)++;
+
+    printf("Element inserted\n");
+}
+
+void delete_index(int arr[], int *n) {
+    int pos;
+
+    if (*n == 0) {
+        printf("Array is empty\n");
+        return;
+    }
+
+    printf("Enter index to delete (0 to %d): ", *n - 1);
+    scanf("%d", &pos);
+
+    if (pos < 0 || pos >= *n) {
+        printf("Invalid index\n");
+        return;
+    }
+
+    for (int i = pos; i < *n - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+
+    (*n)--;
+
+    printf("Element deleted\n");
+}
+
+void linear_search(int arr[], int n) {
+    int key, found = 0;
+
+    printf("Enter element to search: ");
+    scanf("%d", &key);
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            printf("Element found at index %d\n", i);
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("Element not found\n");
+    }
+}
+
+void delete_item(int arr[], int *n) {
+    int key, found = 0;
+
+    printf("Enter element to delete: ");
+    scanf("%d", &key);
+
+    for (int i = 0; i < *n; i++) {
+        if (arr[i] == key) {
+            for (int j = i; j < *n - 1; j++) {
+                arr[j] = arr[j + 1];
+            }
+            (*n)--;
+            printf("Element deleted\n");
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("Element not found\n");
+    }
+}
+
+void binary(int arr[], int n) {
+    int key, low = 0, high = n - 1, mid;
+
+    printf("Enter element to search: ");
+    scanf("%d", &key);
+
+    while (low <= high) {
+        mid = (low + high) / 2;
+
+        if (arr[mid] == key) {
+            printf("Element found at index %d\n", mid);
+            return;
+        } else if (arr[mid] < key) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    printf("Element not found\n");
+}
+int main() {
+    int arr[MAX];
+    int n = 0;
+    int choice;
+
+    while (1) {
+        printf("\n--- ARRAY OPERATIONS ---\n");
+        printf("1. Input Array\n");
+        printf("2. Display\n");
+        printf("3. Insert\n");
+        printf("4. Delete by Index\n");
+        printf("5. Linear Search\n");
+        printf("6. Delete by Value\n");
+        printf("7. Binary Search\n");
+        printf("8. Exit\n");
+
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1: input(arr, &n); break;
+            case 2: display(arr, n); break;
+            case 3: insert(arr, &n); break;
+            case 4: delete_index(arr, &n); break;
+            case 5: linear_search(arr, n); break;
+            case 6: delete_item(arr, &n); break;
+            case 7: binary(arr, n); break;
+            case 8: return 0;
+            default: printf("Invalid choice\n");
+        }
+    }
+
+    return 0;
+}
